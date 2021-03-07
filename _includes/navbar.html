@@ -1,20 +1,71 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-3">
+<!-- navbar -->
+<nav class="navbar upper justify-content-between align-items-center">
+  <div class="left-actions d-flex">
+    <div class="mail">
+      <img src="{{ site.image_base_url }}/mail.png" alt=""> <span>info@punecollege.edu.in</span>
+    </div>
+    <div class="call ml-3">
+      <img src="{{ site.image_base_url }}/call.png" alt=""> <span>020 - 12345678</span>
+    </div>
+    <div class="social ml-3">
+      <a href="#"><img src="{{ site.image_base_url }}/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="{{ site.image_base_url }}/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="{{ site.image_base_url }}/linkedin.png" alt="LinkedIn"></a>
+      <a href="#"><img src="{{ site.image_base_url }}/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="{{ site.image_base_url }}/insta.png" alt="Instagram"></a>
+    </div>
+  </div>
+  <div class="right-actions d-flex align-items-center">
+    <div class="links">
+      <a href="#"><span>Staff</span></a>
+      <a href="#" class="ml-3"><span>Alumni</span></a>
+      <a href="#" class="ml-3"><span>News & Events</span></a>
+    </div>
+    <a href="#" class="btn btn-apply"><span>APPLY NOW</span></a>
+  </div>
+</nav>
+<nav class="middle d-flex justify-content-between align-items-center flex-wrap">
+  <div class="left-items d-flex">
+    <img src="{{ site.image_base_url }}/book-reader.png" class="profile" alt="Pune College of Engineering">
+    <div class="info ml-4">
+      <p>SOCIAL WELFARE SOCIETY'S</p>
+      <p class="college">PUNE COLLEGE OF ENGINEERING</p>
+      <p>Affiliated to Savitribai Phule Pune University</p>
+      <p class="text-danger">NAAC Accredited "A"</p>
+    </div>
+  </div>
+  <div class="right-items">
+    <a href="#" class="btn btn-admission">ADMISSIONS 2020-2021</a>
+  </div>
+</nav>
+<nav class="navbar lower navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="/">{{ site.title }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav text-center mx-auto">
-        <li class="nav-item {% if page.page_name == 'home' %}active{% endif %}">
-          <a class="nav-link" href="/">Home</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</span></a>
         </li>
-        <li class="nav-item {% if page.page_name == 'about' %}active{% endif %}">
-          <a class="nav-link" href="/about">About</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item {% if page.page_name == 'blogs' %}active{% endif %}">
-          <a class="nav-link" href="/blogs">Blogs</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admissions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Campus Life</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Others</a>
         </li>
       </ul>
     </div>

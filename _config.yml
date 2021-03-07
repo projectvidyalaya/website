@@ -1,13 +1,14 @@
-title: Jekyll Play
-email: budhram.gurung01@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  The minimal Jekyll base template to quickly start with.
+title: Pune College of Engineering
+email: brgclasses@gmail.com
+year: 2021
+description: >-
+  A jekyll based college website template
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: coolbrg
-github_username:  coolbrg
+image_base_url: /assets/img
+# image_base_url:
 
-google_analytics: # your google analytics id
+google_analytics: G-PH6J9YMRCN
 
 # Build settings
 markdown: kramdown

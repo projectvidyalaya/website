@@ -5,22 +5,52 @@ html,
 body {
   height: 100%;
 }
-body {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 16px;
-}
-.page-margin {
-  margin-top: 100px;
+a, a:hover {
+  text-decoration: none;
+  color: white;
 }
 ul {
   list-style: none;
+  padding-left: 0;
 }
-// .no-list-style {
-
-// }
-.highlight pre {
-  padding: 0.8rem 0.8rem;
-  background: #eee;
+.relative {
+  position: relative;
+}
+.mt-7 {
+  margin-top: 6rem;
+}
+.py-7 {
+  padding: 6rem 0;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.font-primary {
+  font-family: 'Poppins', sans-serif;
+}
+.font-secondary {
+  font-family: 'Source Serif Pro', sans-serif;
+}
+section:nth-child(odd), .bg-gray {
+  background-color: #F5F5F5;
+}
+.section-header .section-title {
+  font-family: 'Source Serif Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+.section-header .section-divider {
+  border-bottom-width: 3px;
+  border-bottom-color: #dcdcdc;
+  overflow: hidden;
+  padding-top: 0.8rem;
+  border-bottom-style: solid;
 }
 #page-content {
   flex: 1 0 auto;
@@ -29,7 +59,30 @@ ul {
   flex-shrink: none;
 }
 
-@import "syntax-highlighting";
-@import "animate.min";
+// simplebox
+.sl-wrapper {
+  .sl-close {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .sl-close:active, .sl-close:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .sl-navigation {
+    .sl-prev, .sl-next {
+      color: #fff;
+      font-size: 5rem !important;
+    }
+    .sl-prev:active, .sl-next:active, .sl-prev:focus, .sl-next:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+.sl-overlay {
+  background: #444;
+}
+
 @import "home";
 @import "responsive";

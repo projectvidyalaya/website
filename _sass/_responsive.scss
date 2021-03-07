@@ -1,15 +1,71 @@
-// desktop
-@media (max-width: 992px) {
+@media (min-width: 786px) {
+  .news-events-section .col-lg-9 {
+    padding-right: 3rem;
+  }
 }
-
-// ipad and tablet
-@media (max-width: 768px) {
+@media (max-width: 786px) {
+  .admissions-section .nav-tabs .nav-item {
+    margin-bottom: 0.3rem;
+  }
 }
-
-// standard mobile size
-@media (max-width: 500px) {
+@media (max-width: 786px) and (min-width: 480px) {
+  .highlights .highlight-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .highlights .highlight-item .highlight-title {
+    font-size: 11px;
+  }
 }
+@media (max-width: 480px) {
+  header .upper {
+    padding: 1rem;
+    justify-content: center !important;
+  }
+  header .upper .left-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+  }
+  header .middle {
+    justify-content: center !important;
+  }
+  header .middle .right-items {
+    margin: 1rem 0;
+  }
+  .highlights .highlight-item .highlight-title {
+    padding: 1rem 0.5rem;
+  }
+  .about-section .about-info {
+    margin-top: 2rem;
+  }
+  .admissions-section .tab-content .tab-pane {
+    padding-bottom: 0;
+  }
+  .covid-section .covid-text-wrapper .inner-content {
+    left: 0;
+  }
+  .news-events-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .news-events-section .news-item img {
+    height: auto;
+  }
+  .news-events-section .anniversary-news {
+    padding-left: 1.5rem;
+  }
+  .news-events-section .anniversary-news h1 {
+    font-size: 32px;
+  }
 
-// small size mobile
-@media(max-width: 360px) {
+  .contact-section h3 {
+    margin-top: 1.5rem;
+  }
+
+  footer span {
+    display: block;
+  }
 }

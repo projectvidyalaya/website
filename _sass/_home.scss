@@ -1,0 +1,380 @@
+// header
+header {
+  .upper {
+    padding: 0 0 0 3rem;
+    background-color: #20305F;
+    position: relative;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+
+    img {
+      height: 17px;
+    }
+
+    .right-actions .btn-apply {
+      padding: 0.6rem 1rem;
+      display: inline-block;
+      background-color: #BB0707;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 0;
+      margin-left: 1rem;
+    }
+  }
+
+  .middle {
+    background-color: #fff;
+    padding: 1rem 2rem;
+
+    .left-items {
+      .profile {
+        height: 100px;
+      }
+      .info {
+        font-family: 'Source Serif Pro', sans-serif;
+      }
+      .info > p {
+        margin-bottom: 0;
+      }
+      .info > p:last-child {
+        font-size: 14px;
+      }
+      .college {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+
+    .right-items {
+      .btn-admission {
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0.8rem 2.5rem;
+        background-color: #2B28D0;
+        border-radius: 0;
+        color: #fff;
+      }
+    }
+  }
+
+  .navbar.lower {
+    background-color: #20305F;
+    padding: 0;
+  }
+  .navbar {
+    .navbar-nav .nav-item .nav-link {
+      padding: 0.8rem 1.5rem;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .navbar-nav .nav-item.active .nav-link,
+      .navbar-nav .nav-item:hover .nav-link {
+      background-color: #495885;
+    }
+  }
+
+  // banner
+  .banner {
+    .banner-img, .notifications {
+      height: 500px;
+      background-color: black;
+    }
+    .banner-img::before {
+      content: '';
+      background: url($baseurl + "/assets/img/banner.jpg") no-repeat center center/cover;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .notifications {
+      background-color: #F1F1F1;
+
+      .update-items {
+        font-size: 13px;
+        padding: 0 1rem 0 1rem;
+
+        .btn-new {
+          font-size: 9px;
+          background-color: #BB0707;
+          color: #fff;
+          border-radius: 0;
+          padding: 0.125rem 0.5rem;
+        }
+
+        li {
+          color: #2311F8;
+          background-color: #e6e6e6;
+          padding: 0.25rem 0.8rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// highlights
+.highlights {
+  margin-top: -50px;
+
+  .row {
+    gap: 2.5rem;
+  }
+
+  .highlight-item {
+      img {
+      object-fit: cover;
+    }
+    .highlight-title {
+      background-color: #20305F;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      padding: 0.5rem 0.25rem;
+    }
+  }
+}
+
+// about
+.about-section {
+  .about-info {
+    line-height: 26px;
+  }
+  .features {
+    ul {
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 36px;
+    }
+    img {
+      height: 25px;
+    }
+  }
+}
+
+// principal
+.principal-section {
+  .message-info {
+    line-height: 26px;
+  }
+}
+
+// admissions
+.admissions-section {
+  .nav-tabs {
+    .nav-link {
+      background-color: #DBDBDB;
+      color: #666;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 0;
+      margin-right: 5px;
+    }
+    .nav-link.active {
+      background-color: #F8F8F8;
+      border: 1px solid #F8F8F8;
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      padding: 3rem;
+
+      img {
+        height: 25px;
+      }
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+// covid
+.covid-section {
+  .background-container {
+    position: relative;
+
+    .image-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .covid-text-wrapper {
+    .inner-content {
+      padding: 3rem;
+      background-color: #E9E9E9;
+      margin: 30px 0;
+      position: relative;
+      left: 80%;
+    }
+    .title {
+      font-family: "Source Serif Pro", sans-serif;
+    }
+    img {
+      height: 25px;
+    }
+  }
+}
+
+// stats
+.stats-section {
+  background-color: #333;
+  color: #fff;
+  position: relative;
+
+  .section-title {
+    color: #fff;
+    position: relative;
+  }
+
+  .bg-cover::before {
+    content: '';
+    background: url($baseurl + "/assets/img/stats.jpg") no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* news and events */
+.news-events-section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  .section-header {
+    .section-title .title {
+      display: inline-block;
+      border-right: 3px solid #1A64D4;
+      padding-right: 1rem;
+    }
+  }
+
+  .section-header {
+    .section-title .view-more {
+      color: #666;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Poppins', sans-serif;
+      padding-left: 1rem;
+      vertical-align: middle;
+    }
+  }
+
+  .news-item {
+    img {
+      height: 220px;
+    }
+
+    .news-info-wrapper {
+      background-color: #fff;
+      padding: 1rem;
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        height: 20px;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .events-header {
+    border-bottom: 1px solid #999;
+  }
+
+  .events {
+    .event-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #999;
+      .date {
+        width: 34%;
+        span {
+          font-size: 30px;
+          display: block;
+        }
+      }
+      .name {
+        width: 66%;
+      }
+    }
+  }
+
+  // anniversary news
+  .anniversary-news {
+    height: 400px;
+    background-color: #444;
+    position: relative;
+    padding-left: 7rem;
+
+    h1 {
+      color: #fff;
+      font-family: 'Source Serif Pro', sans-serif;
+      font-weight: 600;
+      position: relative;
+    }
+    .btn-danger img {
+      height: 25px;
+    }
+  }
+  .anniversary-news > * {
+    z-index: 10;
+  }
+  .anniversary-news::before {
+    content: '';
+    background: url($baseurl + "/assets/img/celebration.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+}
+
+// gallery section
+.gallery-section {
+  .section-header .view-more {
+    color: #666;
+    font-size: 20px;
+  }
+}
+
+// partners section
+.partners-section {
+  img {
+    height: 70px;
+    margin-right: 20px;
+  }
+}
+
+// contact section
+.contact-section {
+  background-color: #003062;
+
+  .contact-info img, .quick-links img {
+    height: 25px;
+  }
+  .quick-links li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// footer
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 13px;
+  padding: 0.5rem;
+}
