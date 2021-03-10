@@ -83,7 +83,7 @@ header {
     }
     .banner-img::before {
       content: '';
-      background: url($baseurl + "/assets/img/banner.jpg") no-repeat center center/cover;
+      background: url($image_base_url + "/banner.jpg") no-repeat center center/cover;
       opacity: 0.7;
       position: absolute;
       top: 0;
@@ -235,7 +235,7 @@ header {
 
   .bg-cover::before {
     content: '';
-    background: url($baseurl + "/assets/img/stats.jpg") no-repeat center center/cover;
+    background: url($image_base_url + "/stats.jpg") no-repeat center center/cover;
     position: absolute;
     opacity: 0.5;
     top: 0;
@@ -333,7 +333,7 @@ header {
   }
   .anniversary-news::before {
     content: '';
-    background: url($baseurl + "/assets/img/celebration.jpg") no-repeat center center/cover;
+    background: url($image_base_url + "/celebration.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
