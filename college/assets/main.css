@@ -1,0 +1,179 @@
+/* Custom SCSS */
+html, body { height: 100%; }
+
+a, a:hover { text-decoration: none; color: white; }
+
+ul { list-style: none; padding-left: 0; }
+
+.relative { position: relative; }
+
+.mt-7 { margin-top: 6rem; }
+
+.py-7 { padding: 6rem 0; }
+
+.gap-1 { gap: 1rem; }
+
+.gap-2 { gap: 2rem; }
+
+.font-primary { font-family: 'Poppins', sans-serif; }
+
+.font-secondary { font-family: 'Source Serif Pro', sans-serif; }
+
+section:nth-child(odd), .bg-gray { background-color: #F5F5F5; }
+
+.section-header .section-title { font-family: 'Source Serif Pro', sans-serif; font-size: 32px; font-weight: 600; color: #444; margin-bottom: 3rem; margin-right: 2rem; }
+
+.section-header .section-divider { border-bottom-width: 3px; border-bottom-color: #dcdcdc; overflow: hidden; padding-top: 0.8rem; border-bottom-style: solid; }
+
+#page-content { flex: 1 0 auto; }
+
+#sticky-footer { flex-shrink: none; }
+
+.sl-wrapper .sl-close { color: #fff; font-size: 4rem; }
+
+.sl-wrapper .sl-close:active, .sl-wrapper .sl-close:focus { outline: none !important; box-shadow: none !important; }
+
+.sl-wrapper .sl-navigation .sl-prev, .sl-wrapper .sl-navigation .sl-next { color: #fff; font-size: 5rem !important; }
+
+.sl-wrapper .sl-navigation .sl-prev:active, .sl-wrapper .sl-navigation .sl-next:active, .sl-wrapper .sl-navigation .sl-prev:focus, .sl-wrapper .sl-navigation .sl-next:focus { outline: none; box-shadow: none; }
+
+.sl-overlay { background: #444; }
+
+header .upper { padding: 0 0 0 3rem; background-color: #20305F; position: relative; font-size: 12px; font-weight: 300; color: #fff; }
+
+header .upper img { height: 17px; }
+
+header .upper .right-actions .btn-apply { padding: 0.6rem 1rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 13px; font-weight: 500; border-radius: 0; margin-left: 1rem; }
+
+header .middle { background-color: #fff; padding: 1rem 2rem; }
+
+header .middle .left-items .profile { height: 100px; }
+
+header .middle .left-items .info { font-family: 'Source Serif Pro', sans-serif; }
+
+header .middle .left-items .info > p { margin-bottom: 0; }
+
+header .middle .left-items .info > p:last-child { font-size: 14px; }
+
+header .middle .left-items .college { font-size: 25px; font-weight: 600; }
+
+header .middle .right-items .btn-admission { font-size: 15px; font-weight: 400; padding: 0.8rem 2.5rem; background-color: #2B28D0; border-radius: 0; color: #fff; }
+
+header .navbar.lower { background-color: #20305F; padding: 0; }
+
+header .navbar .navbar-nav .nav-item .nav-link { padding: 0.8rem 1.5rem; font-size: 13px; font-weight: 400; }
+
+header .navbar .navbar-nav .nav-item.active .nav-link, header .navbar .navbar-nav .nav-item:hover .nav-link { background-color: #495885; }
+
+header .banner .banner-img, header .banner .notifications { height: 500px; background-color: black; }
+
+header .banner .banner-img::before { content: ''; background: url("/college/assets/img/banner.jpg") no-repeat center center/cover; opacity: 0.7; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+header .banner .notifications { background-color: #F1F1F1; }
+
+header .banner .notifications .update-items { font-size: 13px; padding: 0 1rem 0 1rem; }
+
+header .banner .notifications .update-items .btn-new { font-size: 9px; background-color: #BB0707; color: #fff; border-radius: 0; padding: 0.125rem 0.5rem; }
+
+header .banner .notifications .update-items li { color: #2311F8; background-color: #e6e6e6; padding: 0.25rem 0.8rem; margin-bottom: 0.5rem; }
+
+.highlights { margin-top: -50px; }
+
+.highlights .row { gap: 2.5rem; }
+
+.highlights .highlight-item img { object-fit: cover; }
+
+.highlights .highlight-item .highlight-title { background-color: #20305F; color: #fff; text-align: center; font-size: 14px; padding: 0.5rem 0.25rem; }
+
+.about-section .about-info { line-height: 26px; }
+
+.about-section .features ul { padding-left: 0; font-size: 14px; line-height: 36px; }
+
+.about-section .features img { height: 25px; }
+
+.principal-section .message-info { line-height: 26px; }
+
+.admissions-section .nav-tabs .nav-link { background-color: #DBDBDB; color: #666; font-size: 16px; font-weight: 600; border-radius: 0; margin-right: 5px; }
+
+.admissions-section .nav-tabs .nav-link.active { background-color: #F8F8F8; border: 1px solid #F8F8F8; }
+
+.admissions-section .tab-content .tab-pane { padding: 3rem; }
+
+.admissions-section .tab-content .tab-pane img { height: 25px; }
+
+.admissions-section .tab-content span { margin-left: 10px; }
+
+.covid-section .background-container { position: relative; }
+
+.covid-section .background-container .image-wrapper { position: absolute; top: 0; left: 0; }
+
+.covid-section .covid-text-wrapper .inner-content { padding: 3rem; background-color: #E9E9E9; margin: 30px 0; position: relative; left: 80%; }
+
+.covid-section .covid-text-wrapper .title { font-family: "Source Serif Pro", sans-serif; }
+
+.covid-section .covid-text-wrapper img { height: 25px; }
+
+.stats-section { background-color: #333; color: #fff; position: relative; }
+
+.stats-section .section-title { color: #fff; position: relative; }
+
+.stats-section .bg-cover::before { content: ''; background: url("/college/assets/img/stats.jpg") no-repeat center center/cover; position: absolute; opacity: 0.5; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* news and events */
+.news-events-section { padding-left: 3rem; padding-right: 3rem; }
+
+.news-events-section .section-header .section-title .title { display: inline-block; border-right: 3px solid #1A64D4; padding-right: 1rem; }
+
+.news-events-section .section-header .section-title .view-more { color: #666; font-size: 18px; font-weight: 400; font-family: 'Poppins', sans-serif; padding-left: 1rem; vertical-align: middle; }
+
+.news-events-section .news-item img { height: 220px; }
+
+.news-events-section .news-item .news-info-wrapper { background-color: #fff; padding: 1rem; }
+
+.news-events-section .news-item .news-info-wrapper p:last-child { margin-bottom: 0; }
+
+.news-events-section .news-item .news-info-wrapper img { height: 20px; }
+
+.news-events-section .news-item .news-info-wrapper span { font-size: 13px; }
+
+.news-events-section .events-header { border-bottom: 1px solid #999; }
+
+.news-events-section .events .event-item { padding: 1.5rem 0; border-bottom: 1px solid #999; }
+
+.news-events-section .events .event-item .date { width: 34%; }
+
+.news-events-section .events .event-item .date span { font-size: 30px; display: block; }
+
+.news-events-section .events .event-item .name { width: 66%; }
+
+.news-events-section .anniversary-news { height: 400px; background-color: #444; position: relative; padding-left: 7rem; }
+
+.news-events-section .anniversary-news h1 { color: #fff; font-family: 'Source Serif Pro', sans-serif; font-weight: 600; position: relative; }
+
+.news-events-section .anniversary-news .btn-danger img { height: 25px; }
+
+.news-events-section .anniversary-news > * { z-index: 10; }
+
+.news-events-section .anniversary-news::before { content: ''; background: url("/college/assets/img/celebration.jpg") no-repeat center center/cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.6; }
+
+.gallery-section .section-header .view-more { color: #666; font-size: 20px; }
+
+.partners-section img { height: 70px; margin-right: 20px; }
+
+.contact-section { background-color: #003062; }
+
+.contact-section .contact-info img, .contact-section .quick-links img { height: 25px; }
+
+.contact-section .quick-links li { margin-bottom: 0.5rem; }
+
+footer { background-color: #333; color: #fff; font-size: 13px; padding: 0.5rem; }
+
+@media (min-width: 786px) { .news-events-section .col-lg-9 { padding-right: 3rem; } }
+
+@media (max-width: 786px) { .admissions-section .nav-tabs .nav-item { margin-bottom: 0.3rem; } }
+
+@media (max-width: 786px) and (min-width: 480px) { .highlights .highlight-item { padding-left: 0; padding-right: 0; } .highlights .highlight-item .highlight-title { font-size: 11px; } }
+
+@media (max-width: 480px) { header .upper { padding: 1rem; justify-content: center !important; } header .upper .left-actions { flex-wrap: wrap; justify-content: center; margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; } header .middle { justify-content: center !important; } header .middle .right-items { margin: 1rem 0; } .highlights .highlight-item .highlight-title { padding: 1rem 0.5rem; } .about-section .about-info { margin-top: 2rem; } .admissions-section .tab-content .tab-pane { padding-bottom: 0; } .covid-section .covid-text-wrapper .inner-content { left: 0; } .news-events-section { padding-left: 1rem; padding-right: 1rem; } .news-events-section .news-item img { height: auto; } .news-events-section .anniversary-news { padding-left: 1.5rem; } .news-events-section .anniversary-news h1 { font-size: 32px; } .contact-section h3 { margin-top: 1.5rem; } footer span { display: block; } }
+
+/*# sourceMappingURL=main.css.map */
