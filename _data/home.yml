@@ -1,0 +1,23 @@
+navbar:
+  mail: info@punecollege.edu.in
+  phone: 020 - 12345678
+  trustee: SOCIAL WELFARE SOCIETY'S
+  college-name: PUNE COLLEGE OF ENGINEERING
+  affiliation: Affiliated to Savitribai Phule Pune University
+  accreditation: NAAC Accredited "A"
+  action-btn:
+    title: ADMISSIONS 2020-2021
+    url: action-url
+banner:
+  bg-img: https://brgclasses.sirv.com/vidyalaya/img/banner.jpg
+  news:
+    new:
+      - title: Eligibility List 2020-2021
+        url: some-url-1
+      - title: BSC (Comp Sci.) Admission 2020-2021 extended to 30th Feb, 2021
+        url: some-url-2
+      - title: Merit List for 2nd Year BSC(comp. sci.) published
+        url: some-url-3
+    old:
+      - title: Results of MCA 1st Year Announced
+        url: some-url-4

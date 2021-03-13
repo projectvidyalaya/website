@@ -3,4 +3,5 @@
 
 $baseurl: "{{ site.baseurl }}";
 $image_base_url: "{{ site.image_base_url }}";
+$banner-bg-img: "{{ site.data.home.banner.bg-img }}";
 @import "custom";
