@@ -21,13 +21,15 @@ ul { list-style: none; padding-left: 0; }
 
 section:nth-child(odd), .bg-gray { background-color: #F5F5F5; }
 
-.section-header .section-title { font-family: 'Source Serif Pro', sans-serif; font-size: 32px; font-weight: 600; color: #444; margin-bottom: 3rem; margin-right: 2rem; }
+.section-header .section-title { font-family: 'Source Serif Pro', sans-serif; font-size: 32px; font-weight: 600; color: #444; margin-bottom: 3rem; margin-right: 2rem; text-transform: uppercase; }
 
 .section-header .section-divider { border-bottom-width: 3px; border-bottom-color: #dcdcdc; overflow: hidden; padding-top: 0.8rem; border-bottom-style: solid; }
 
 #page-content { flex: 1 0 auto; }
 
 #sticky-footer { flex-shrink: none; }
+
+div p:last-child { margin-bottom: 0 !important; }
 
 .sl-wrapper .sl-close { color: #fff; font-size: 4rem; }
 
@@ -43,7 +45,7 @@ header .upper { padding: 0 0 0 3rem; background-color: #20305F; position: relati
 
 header .upper img { height: 17px; }
 
-header .upper .right-actions .btn-apply { padding: 0.6rem 1rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 13px; font-weight: 500; border-radius: 0; margin-left: 1rem; }
+header .upper .right-actions .btn-apply { padding: 0.6rem 1rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 13px; font-weight: 500; border-radius: 0; }
 
 header .middle { background-color: #fff; padding: 1rem 2rem; }
 
@@ -73,17 +75,19 @@ header .banner .notifications { background-color: #F1F1F1; }
 
 header .banner .notifications .update-items { font-size: 13px; padding: 0 1rem 0 1rem; }
 
-header .banner .notifications .update-items .btn-new { font-size: 9px; background-color: #BB0707; color: #fff; border-radius: 0; padding: 0.125rem 0.5rem; }
+header .banner .notifications .update-items li { background-color: #e6e6e6; padding: 0.25rem 0.8rem; margin-bottom: 0.5rem; }
 
-header .banner .notifications .update-items li { color: #2311F8; background-color: #e6e6e6; padding: 0.25rem 0.8rem; margin-bottom: 0.5rem; }
+header .banner .notifications .update-items li .news-title { color: #333; }
 
-.highlights { margin-top: -50px; }
+header .banner .notifications .update-items li .label-new { font-size: 9px; background-color: #BB0707; color: #fff; border-radius: 0; padding: 0.25rem 0.5rem; }
 
-.highlights .row { gap: 2.5rem; }
+.quick-links { margin-top: -50px; }
 
-.highlights .highlight-item img { object-fit: cover; }
+.quick-links .row { gap: 2.5rem; }
 
-.highlights .highlight-item .highlight-title { background-color: #20305F; color: #fff; text-align: center; font-size: 14px; padding: 0.5rem 0.25rem; }
+.quick-links .quick-links-item img { object-fit: cover; }
+
+.quick-links .quick-links-item .quick-links-title { background-color: #20305F; color: #fff; text-align: center; font-size: 14px; padding: 0.5rem 0.25rem; }
 
 .about-section .about-info { line-height: 26px; }
 
@@ -113,11 +117,11 @@ header .banner .notifications .update-items li { color: #2311F8; background-colo
 
 .covid-section .covid-text-wrapper img { height: 25px; }
 
-.stats-section { background-color: #333; color: #fff; position: relative; }
+.highlights-section { background-color: #333; color: #fff; position: relative; }
 
-.stats-section .section-title { color: #fff; position: relative; }
+.highlights-section .section-title { color: #fff; position: relative; }
 
-.stats-section .bg-cover::before { content: ''; background: url("https://brgclasses.sirv.com/vidyalaya/img/stats.jpg") no-repeat center center/cover; position: absolute; opacity: 0.5; top: 0; left: 0; width: 100%; height: 100%; }
+.highlights-section .bg-cover::before { content: ''; background: url("https://brgclasses.sirv.com/vidyalaya/img/stats.jpg") no-repeat center center/cover; position: absolute; opacity: 0.5; top: 0; left: 0; width: 100%; height: 100%; }
 
 /* news and events */
 .news-events-section { padding-left: 3rem; padding-right: 3rem; }
@@ -162,9 +166,11 @@ header .banner .notifications .update-items li { color: #2311F8; background-colo
 
 .contact-section { background-color: #003062; }
 
-.contact-section .contact-info img, .contact-section .quick-links img { height: 25px; }
+.contact-section iframe { width: 100%; height: 250px; border: 0; }
 
-.contact-section .quick-links li { margin-bottom: 0.5rem; }
+.contact-section .contact-info img, .contact-section .links img { height: 25px; }
+
+.contact-section .links li { margin-bottom: 0.5rem; }
 
 footer { background-color: #333; color: #fff; font-size: 13px; padding: 0.5rem; }
 
