@@ -2,4 +2,4 @@
 
 # Project Vidyalaya
 
-An Open Source based tech solutions for Educational needs.
+An Open Source based solutions for Educational needs
