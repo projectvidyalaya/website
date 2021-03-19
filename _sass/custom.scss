@@ -1,6 +1,4 @@
 /* Custom SCSS */
-$color-primary: #ddd;
-
 html,
 body {
   height: 100%;
@@ -9,55 +7,8 @@ body {
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px;
 }
-.page-margin {
-  margin-top: 100px;
-}
 ul {
   list-style: none;
-}
-// .no-list-style {
-
-// }
-.highlight pre {
-  padding: 0.8rem 0.8rem;
-  background: #eee;
-}
-#page-content {
-  flex: 1 0 auto;
-}
-#sticky-footer {
-  flex-shrink: none;
-}
-
-#coming-soon {
-  background-image: url($baseurl + "/assets/img/coming-soon.jpg");
-  position: relative;
-  height: 100vh;
-  z-index: 1;
-  padding: 0 20px;
-  background-size: cover;
-  color: #fff;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    opacity: .4;
-    background: #000;
-  }
-
-  .divider {
-    background-color: yellow;
-  }
-
-  .coming-soon-logo {
-    height: 150px;
-    width: auto;
-  }
 }
 
 @import "syntax-highlighting";

@@ -4,6 +4,8 @@ description: >-
   An Open Source based solutions for Educational needs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""
+image_base_url: /assets/img
+
 twitter_username: coolbrg
 github_username:  coolbrg
 

@@ -4,12 +4,17 @@
   {%- include head.html -%}
 
   <body class="d-flex flex-column">
-    <div id="page-content">
-      <main>
-        {{ content }}
-      </main>
-    </div>
+    <header>
+      {% include navbar.html %}
+      {% include banner.html %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
 
+    {% include footer.html %}
+
+    {% include javascripts.html %}
   </body>
 
 </html>
