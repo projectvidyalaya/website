@@ -1,0 +1,41 @@
+.projects {
+  .learn-more a {
+    color: #1071ee;
+    font-size: 1.5rem;
+  }
+}
+.project {
+  margin: 50px 0;
+
+  h1 {
+    font-weight: 600;
+  }
+  h1, h2, h3 {
+    color: #333;
+  }
+  h4, h5, h6 {
+    color: #444;
+  }
+
+  p, ul li {
+    margin: 0.8rem 0;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #555;
+  }
+
+  img {
+    margin: 1rem 0;
+  }
+
+  h1, h2 {
+    margin: 2.5rem 0;
+  }
+  h3, h4, h5, h6 {
+    margin: 2rem 0;
+  }
+  .back-btn {
+    font-size: 1.5rem;
+  }
+}

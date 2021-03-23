@@ -1,0 +1,18 @@
+{% assign height = "400px" %}
+{% assign width = "600px" %}
+{% if include.height %}
+  {% height = include.height %}
+{% endif %}
+{% if include.width %}
+  {% width = include.width %}
+{% endif %}
+<div class="embed-responsive embed-responsive-16by9" style="height:{{ height }}px;width:{{ width }}px;margin:auto;">
+  <iframe id="facebookVideo" class="embed-responsive-item" src="{{ include.src }}" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+    allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+</div>
+{% if include.caption %}
+  <div class="text-center">
+    <caption>{{ include.caption }}</caption>
+  </div>
+{% endif %}
+<div class="mb-3"></div>

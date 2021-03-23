@@ -4,23 +4,41 @@ body {
   height: 100%;
 }
 body {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 16px;
 }
-ul {
-  list-style: none;
+a, a:hover {
+  text-decoration: none;
 }
 #page-content {
   flex: 1 0 auto;
 }
+header {
+  margin-top: 70px;
+}
 footer {
   flex-shrink: none;
 }
+.pr-6 {
+  padding-right: 4rem !important;
+}
 .section-padding {
-  padding: 6rem 0;
+  padding: 7rem 0;
+}
+.section-header h1 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+.page-header {
+  background: rgb(29,30,31);
+  background: linear-gradient(90deg, rgba(29,30,31,1) 0%, rgba(88,88,96,1) 100%);
+  color: #fff;
+  opacity: 0.8;
+  padding: 4rem 0;
 }
 
 @import "syntax-highlighting";
 @import "animate.min";
 @import "home";
+@import "project";
 @import "responsive";

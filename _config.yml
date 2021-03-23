@@ -9,6 +9,10 @@ image_base_url: /assets/img
 twitter_username: coolbrg
 github_username:  coolbrg
 
+collections:
+  projects:
+    output: true
+
 google_analytics: # your google analytics id
 
 # Build settings

@@ -7,7 +7,14 @@
     <div id="page-content">
       <header>
         {% include navbar.html %}
-        {% include banner.html %}
+
+        {% if page.title == "Home" %}
+          {% include banner.html %}
+        {% endif %}
+
+        {% if page.header-text %}
+          {% include page-header.html text=page.header-text %}
+        {% endif %}
       </header>
       <main>
         {{ content }}

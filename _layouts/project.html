@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="project">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-11">
+        <div class="preview-wrapper">
+          {% if page.preview %}
+            {% if page.preview.youtube %}
+              {% assign id = page.preview.youtube.id %}
+              {% include util/embed-youtube.html id=id %}
+            {% endif %}
+            {% if page.preview.facebook %}
+              {% assign src = page.preview.facebook %}
+              {% include util/embed-facebook.html src=src %}
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-11">
+        <div class="build-yourself px-4">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center mt-5">
+      <a href="/projects/" class="btn back-btn text-danger"><i class="fas fa-long-arrow-alt-left"></i> Back to all projects</a>
+    </div>
+  </div>
+</div>
