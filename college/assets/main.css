@@ -41,11 +41,11 @@ div p:last-child { margin-bottom: 0 !important; }
 
 .sl-overlay { background: #444; }
 
-header .upper { padding: 0 0 0 3rem; background-color: #20305F; position: relative; font-size: 12px; font-weight: 300; color: #fff; }
+header .upper { padding: 0 0 0 3rem; background-color: #20305F; position: relative; font-size: 13px; font-weight: 300; color: #fff; }
 
-header .upper img { height: 17px; }
+header .upper img { height: 17px; margin-left: 0.25rem; }
 
-header .upper .right-actions .btn-apply { padding: 0.6rem 1rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 13px; font-weight: 500; border-radius: 0; }
+header .upper .right-actions .btn-apply { padding: 0.8rem 1rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 13px; font-weight: 500; border-radius: 0; }
 
 header .middle { background-color: #fff; padding: 1rem 2rem; }
 
@@ -63,13 +63,25 @@ header .middle .right-items .btn-admission { font-size: 15px; font-weight: 400; 
 
 header .navbar.lower { background-color: #20305F; padding: 0; }
 
-header .navbar .navbar-nav .nav-item .nav-link { padding: 0.8rem 1.5rem; font-size: 13px; font-weight: 400; }
+header .navbar .navbar-nav .nav-item .nav-link { padding: 1rem 1.5rem; font-size: 15px; font-weight: 300; }
 
 header .navbar .navbar-nav .nav-item.active .nav-link, header .navbar .navbar-nav .nav-item:hover .nav-link { background-color: #495885; }
 
-header .banner .banner-img, header .banner .notifications { height: 500px; background-color: black; }
+header .banner #bannerSlider, header .banner .notifications { height: 500px; background-color: black; }
 
-header .banner .banner-img::before { content: ''; background: url("https://brgclasses.sirv.com/vidyalaya/img/banner.jpg") no-repeat center center/cover; opacity: 0.7; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+header .banner #bannerSlider .carousel-control-next-icon, header .banner #bannerSlider .carousel-control-prev-icon { width: 40px; height: 40px; }
+
+header .banner #bannerSlider .carousel-item .carousel-caption { font-size: 1.5rem; font-weight: 300; left: 0 !important; text-align: left; background-color: #20305F; opacity: 0.9; bottom: 5rem; padding: 1rem; }
+
+header .banner #bannerSlider .carousel-item .carousel-caption p { margin-left: 4rem; }
+
+header .banner #bannerSlider .carousel-item .carousel-caption .btn-details { padding: 0.25rem 1.5rem; display: inline-block; background-color: #BB0707; color: #fff; font-size: 16px; font-weight: 500; border-radius: 0; margin-left: 1rem; }
+
+header .banner #bannerSlider .carousel-item .carousel-caption .btn-details img { height: 25px; }
+
+header .banner #bannerSlider .carousel-item img { height: 500px; object-fit: cover; }
+
+header .banner .banner-img::before { content: ''; background: url("") no-repeat center center/cover; opacity: 0.7; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 header .banner .notifications { background-color: #F1F1F1; }
 
@@ -87,7 +99,7 @@ header .banner .notifications .update-items li .label-new { font-size: 9px; back
 
 .quick-links .quick-links-item img { object-fit: cover; }
 
-.quick-links .quick-links-item .quick-links-title { background-color: #20305F; color: #fff; text-align: center; font-size: 14px; padding: 0.5rem 0.25rem; }
+.quick-links .quick-links-item .quick-links-title { background-color: #20305F; color: #fff; text-align: center; font-size: 14px; padding: 1rem; }
 
 .about-section .about-info { line-height: 26px; }
 
@@ -180,6 +192,6 @@ footer { background-color: #333; color: #fff; font-size: 13px; padding: 0.5rem; 
 
 @media (max-width: 786px) and (min-width: 480px) { .highlights .highlight-item { padding-left: 0; padding-right: 0; } .highlights .highlight-item .highlight-title { font-size: 11px; } }
 
-@media (max-width: 480px) { header .upper { padding: 1rem; justify-content: center !important; } header .upper .left-actions { flex-wrap: wrap; justify-content: center; margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; } header .middle { justify-content: center !important; } header .middle .right-items { margin: 1rem 0; } .highlights .highlight-item .highlight-title { padding: 1rem 0.5rem; } .about-section .about-info { margin-top: 2rem; } .admissions-section .tab-content .tab-pane { padding-bottom: 0; } .covid-section .covid-text-wrapper .inner-content { left: 0; } .news-events-section { padding-left: 1rem; padding-right: 1rem; } .news-events-section .news-item img { height: auto; } .news-events-section .anniversary-news { padding-left: 1.5rem; } .news-events-section .anniversary-news h1 { font-size: 32px; } .contact-section h3 { margin-top: 1.5rem; } footer span { display: block; } }
+@media (max-width: 480px) { header .upper { padding: 1rem; justify-content: center !important; } header .upper .left-actions { flex-wrap: wrap; justify-content: center; margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 1rem; } header .middle { justify-content: center !important; } header .middle .right-items { margin: 1rem 0; } .highlights .highlight-item .highlight-title { padding: 1rem 0.5rem; } .about-section .about-info { margin-top: 2rem; } .admissions-section .tab-content .tab-pane { padding-bottom: 0; padding: 1rem; } .covid-section .covid-text-wrapper .inner-content { left: 0; padding: 2rem; } .news-events-section { padding-left: 1rem; padding-right: 1rem; } .news-events-section .news-item img { height: auto; } .news-events-section .anniversary-news { padding-left: 1.5rem; } .news-events-section .anniversary-news h1 { font-size: 32px; } .highlights-section .highlight-item { margin-bottom: 2rem; } .contact-section h3 { margin-top: 1.5rem; } footer span { display: block; } }
 
 /*# sourceMappingURL=main.css.map */
