@@ -8,9 +8,12 @@ description: |-
   Clone the project in your machine.
   Customize the website as per your needs.
   Deploy the website.
-# preview:
-#   youtube:
-#     id: GF97vqJWwCs
+preview:
+  image:
+    img_path: projects/college-website-101.jpg
+    demo_url: https://college-jekyll-101.netlify.app/
+  # youtube:
+  #   id: GF97vqJWwCs
 
 header-text: College Website Theme
 ---
@@ -74,40 +77,28 @@ _NOTE:_ This method is preferred as we have experienced many issues while using 
 
   and make sure it is the same Ruby version which you installed via RVM
 
-#### 2. Install Jekyll Framework
-
-Run the following command to install Jekyll in your machine
-
-```shell
-gem install bundler jekyll
-```
-
-and verify by running following command
-
-```shell
-jekyll -v
-```
-
-#### 3. Clone project repository
+#### 2. Clone project repository
 
 Run the following command to clone the repository:
 
 ```shell
-git clone https://github.com/brgclasses/college-jekyll
-cd college-jekyll
+git clone https://github.com/brgclasses/college-jekyll-101 college-name
+cd college-name
 ```
 
-#### 4. Run the project locally
+#### 3. Run the project locally
 
 Now you are ready with all the prerequisites required for running the project.
 
-- Run the following command to install required gems (or packages)
+- Run the following command to install required gems (or packages):
 
   ```shell
   bundle install
   ```
 
-- Run the following command to start the Jekyll server
+  This will also install the Jekyll framework package.
+
+- Run the following command to start the Jekyll server:
 
   ```shell
   bundle exec jekyll serve

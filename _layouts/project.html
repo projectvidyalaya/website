@@ -5,9 +5,17 @@ layout: default
 <div class="project">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-11">
+      <div class="col-md-10">
         <div class="preview-wrapper">
           {% if page.preview %}
+            {% if page.preview.image %}
+              <div class="cover-img-wrapper">
+                <a href="{{ page.preview.image.demo_url }}" target="_blank">
+                  <img src="{{ site.image_base_url }}/{{ page.preview.image.img_path }}"
+                    class="img-fluid shadow" alt="College Website Preview">
+                </a>
+              </div>
+            {% endif %}
             {% if page.preview.youtube %}
               {% assign id = page.preview.youtube.id %}
               {% include util/embed-youtube.html id=id %}
@@ -19,7 +27,7 @@ layout: default
           {% endif %}
         </div>
       </div>
-      <div class="col-md-11">
+      <div class="col-md-9">
         <div class="build-yourself px-4">
           {{ content }}
         </div>
